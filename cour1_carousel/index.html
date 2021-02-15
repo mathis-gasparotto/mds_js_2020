@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Exemple JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h2></h2>
+
+
+    <div class="cadre-diapo">
+        <img class="diapo" src="1.png" alt>
+        <img class="diapo" src="2.jpg" alt>
+        <img class="diapo" src="3.jpg" alt>
+        <button class="precedent" aria-label="précédent" onclick="boutons(-1)">❮</button>
+        <button class="suivant" aria-label="suivant" onclick="boutons(1)">❯</button>
+    </div>
+    <div class=cadre-demo>
+        <button class="demo" onclick="actifIndic(1)">1</button>
+        <button class="demo" onclick="actifIndic(2)">2</button>
+        <button class="demo" onclick="actifIndic(3)">3</button>
+    </div>
+    <script src="slider.js"></script>
+    <table>
+        <tr>
+            <td>Thibaut</td>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+
+
+
+
+    <script>
+        // alert('toto')
+        // console.log('toto')
+        /*
+        for (let i = 0; i < 10; i++) {
+
+            // console.log(i)
+        }
+
+
+        let n = 0;
+        while (n < 3) {
+            n++;
+            console.log(n)
+        }
+
+        let prenoms = ['Thibaut', 'Pierre', 'Paul'];
+        console.log(prenoms);
+*/
+
+        function multiplier (a, b){
+            console.log(a * b);
+        }
+
+        multiplier(2,4);
+        multiplier(10,40);
+
+    </script>
+</body>
+</html>

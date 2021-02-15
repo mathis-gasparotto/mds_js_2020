@@ -1,0 +1,13 @@
+.en-tete {
+    background-color: rgb(163, 163, 163);
+}
+
+.num {
+    background-color: rgb(214, 214, 214);
+    text-align: right;
+    font-weight: bold;
+}
+
+#tab {
+    margin-bottom: 50px;
+}

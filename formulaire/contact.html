@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>MatiMajio Corp. - Contact</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="contact.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="top"></div>
+
+    <nav id="main-menu" class="main-menu">
+        <a href="MatiMajioCorp.html#top"><img id="logo" src="img/favicon.svg" alt="logo Corpo"></a>
+        <a href="MatiMajioCorp.html#presentation" class="categories">Présentation</a>
+        <a href="MatiMajioCorp.html#filiales" class="categories">Nos Filiales</a>
+        <a href="produits.html" class="categories">Produits</a>
+        <a href="#top" class="categories">Contact</a>
+        <form class="Search">
+            <input id="search_bar" type="text" placeholder="Recherche..." name="search">
+            <button id="search_icon" type="submit"><img src="img/search_icon.png" alt="search icon" /></button>
+        </form>
+    </nav>
+
+    <div id="contact_content">
+        <form id="contact_form">
+            <div>
+                <label for="surname">Nom* :</label>
+                <input type="text" id="surname" required />
+            </div>
+            <div>
+                <label for="name">Prénom* :</label>
+                <input type="text" id="name" required />
+            </div>
+            <div>
+                <label for="mdp">Mot de Passe* :</label>
+                <input type="password" id="mdp" required />
+            </div>
+            <div>
+                <label for="mdp_cfrm">Confirmez le Mot de Passe* :</label>
+                <input type="password" id="mdp_cfrm" required />
+            </div>
+            <div>
+                <label for="city">Ville* :</label>
+                <input type="text" id="city" required />
+            </div>
+            <div>
+                <label for="zip">Code postal* :</label>
+                <input type="number" placeholder="ex : 38300" id="zip" required />
+            </div>
+            <div>
+                <label for="address">Adresse postale* :</label>
+                <input type="text" id="address" required />
+            </div>
+            <div>
+                <label for="address">Complément d'adresse :</label>
+                <input type="text" id="address" placeholder="ex : 1er étage, etc..." />
+            </div>
+            <div>
+                <label for="num">Numéro de tel.* :</label>
+                <!-- <input type="phone" id="num" required /> -->
+                <input type="number" id="num" required />
+            </div>
+            <div>
+                <input type="submit" value="Envoyer" />
+            </div>
+        </form>
+        <form id="paiement_form">
+            <div>
+                <label for="surname">Nom du titulaire* :</label>
+                <input type="text" id="surname" required />
+            </div>
+            <div>
+                <label for="name">Numéro de la carte* :</label>
+                <input type="number" id="name" required />
+            </div>
+            <div>
+                <label for="name">Date de validité* :</label>
+                <input type="date" id="name" required />
+            </div>
+            <div>
+                <label for="mdp">Cryptogramme* :</label>
+                <input type="number" id="mdp" required />
+            </div>
+            <div>
+                <input type="submit" value="Envoyer" />
+            </div>
+        </form>
+        <div id="errors">
+            <p id="mdp_error">La confirmation du mot de passe n'est pas correct</p>
+            <p id="length_error">Veuillez remplir toutes les cases avec *</p>
+            <p id="num_error">Le numéro de téléphone est incorrect</p>
+            <p id="zip_error">Le code postal est incorrect</p>
+            <p id="mdp_condition">Le mot de passe doit contenir au moins une Majuscule, une minuscale, une caractère
+                spécial, un chiffre et doit faire au moins 8 caractères</p>
+        </div>
+    </div>
+
+
+
+
+    <div id="top_button" class="top_button_del">
+        <a href="#top">
+            <img src="img/fleche_blanche.png" alt="fleche vers le haut" />
+        </a>
+    </div>
+
+</body>
+
+</html>

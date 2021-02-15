@@ -1,0 +1,21 @@
+@font-face {
+    font-family: DS-DIGIT;
+    src: url(../DS-DIGI.TTF);
+}
+
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#time {
+    font-family: DS-DIGIT, sans-serif;
+    font-size: 7em;
+}
+
+#img {
+    height: 50vh;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pong</title>
+</head>
+
+<body>
+    <h1>PONG</h1>
+    <main role="main">
+            <p>Joueur 1 : <strong id="player-score">0</strong> - <strong id="computer-score">0</strong> : Joueur 2</p>
+            <ul>
+                <li>
+                    <button id="start-game">Démarrer</button>
+                </li>
+                <li>
+                    <button id="stop-game">Arrêter</button>
+                </li>
+            </ul>
+
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </main>
+    <script src="script/pong.js"></script>
+    <style>
+        main {
+            margin: 0 auto;
+            background-color: rgb(8, 143, 88);
+            width: 640px;
+            height: 480px;
+        }
+
+        body {
+            background-color: #2b2b2b;
+        }
+
+        p, h1 {
+            color: white;
+        }
+
+        h1, p, ul {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        button {
+            background-color: #2b2b2b;
+            color: white;
+        }
+    </style>
+</body>
+
+</html>

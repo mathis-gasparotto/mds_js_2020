@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>GASPAROTTO Mathis - Atelier</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <table id="tab">
+        <tr>
+            <th class="en-tete">Numéro de question</th>
+            <th class="en-tete">Intitulé de la question</th>
+            <th class="en-tete">Réponse</th>
+            <th class="en-tete">Correction</th>
+        </tr>
+        <tr class="line last_line">
+            <td class="num">1</td>
+            <td>Quelle est la librairie js utilisée lors de cet exercice ?</td>
+            <td>Jquery</td>
+            <td>OK</td>
+        </tr>
+    </table>
+
+    <form id="form_add">
+        <div>
+            <label for="num_add">Numéro de question :</label>
+            <input type="number" id="num_add" required />
+        </div>
+        <div>
+            <label for="quest">Intitulé de la question :</label>
+            <input type="text" id="quest" required />
+        </div>
+        <div>
+            <label for="rep">Réponse :</label>
+            <input type="text" id="rep" required />
+        </div>
+        <div>
+            <input type="submit" value="Ajouter une question" />
+        </div>
+    </form>
+
+    <form id="hide_tab">
+        <input type="submit" value="Masquer le tableau" />
+    </form>
+
+    <form id="remove_lines">
+        <input type="submit" value="Supprimer les lignes ajoutées" />
+    </form>
+
+</body>
+
+</html>
